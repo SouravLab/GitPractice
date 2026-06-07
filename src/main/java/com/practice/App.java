@@ -19,6 +19,9 @@ public class App {
         String greeting = alice.greet();
         String birthdayMessage = alice.birthdayMessage();
         boolean isAdult = alice.isAdult();
+        Address addr = new Address("London", "UK");
+
+        int remainder = calculator.mod(10, 3);
 
         System.out.println("Sum: " + sum);
         System.out.println("Difference: " + difference);

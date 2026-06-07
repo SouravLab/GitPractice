@@ -45,6 +45,10 @@ public class Person {
         return sb.toString();
     }
 
+    public String birthdayMessage() {
+        return String.format("Happy birthday, %s! You are now %d years old.", name, age);
+    }
+
     @Override
     public String toString() {
         return String.format("Person{name='%s', age=%d}", name, age);

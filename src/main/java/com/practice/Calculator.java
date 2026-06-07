@@ -24,6 +24,13 @@ public class Calculator {
         return (a + b) / 2.0;
     }
 
+    public int mod(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Cannot mod by zero");
+        }
+        return a % b;
+    }
+
     public boolean isEven(int value) {
         return value % 2 == 0;
     }
