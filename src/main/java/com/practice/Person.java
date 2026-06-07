@@ -17,7 +17,20 @@ public class Person {
         return age;
     }
 
+    public boolean isAdult() {
+        return age >= 18;
+    }
+
     public String greet() {
         return String.format("Hello, my name is %s and I am %d years old.", name, age);
+    }
+
+    public String birthdayMessage() {
+        return String.format("Happy birthday, %s! You are now %d years old.", name, age);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Person{name='%s', age=%d}", name, age);
     }
 }
