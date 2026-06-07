@@ -22,7 +22,7 @@ public class Person {
     }
 
     public String greet() {
-        return String.format("Hello, my name is %s and I am %d years old.", name, age);
+        return "Hello from feature!";
     }
 
     public String birthdayMessage() {
