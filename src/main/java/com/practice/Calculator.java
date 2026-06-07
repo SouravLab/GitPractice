@@ -45,4 +45,36 @@ public class Calculator {
         }
         return true;
     }
+
+    public long power(int base, int exponent) {
+        long result = 1;
+        for (int i = 0; i < exponent; i++) {
+            result *= base;
+        }
+        return result;
+    }
+
+    public long factorial(int n) {
+        if (n < 0) {
+            throw new IllegalArgumentException("Factorial is not defined for negative numbers");
+        }
+        long result = 1;
+        for (int i = 2; i <= n; i++) {
+            result *= i;
+        }
+        return result;
+    }
+
+    public int fibonacci(int n) {
+        if (n <= 1) {
+            return n;
+        }
+        int a = 0, b = 1;
+        for (int i = 2; i <= n; i++) {
+            int temp = a + b;
+            a = b;
+            b = temp;
+        }
+        return b;
+    }
 }

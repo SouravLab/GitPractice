@@ -1,3 +1,4 @@
+
 package com.practice;
 
 public class App {
@@ -10,6 +11,9 @@ public class App {
         double average = calculator.average(10, 15);
         boolean even = calculator.isEven(24);
         boolean prime = calculator.isPrime(29);
+        long power = calculator.power(2, 8);
+        long factorial = calculator.factorial(5);
+        int fibonacci = calculator.fibonacci(7);
 
         Person alice = new Person("Alice", 30);
         String greeting = alice.greet();
@@ -23,6 +27,9 @@ public class App {
         System.out.println("Average: " + average);
         System.out.println("Is 24 even? " + even);
         System.out.println("Is 29 prime? " + prime);
+        System.out.println("2 to power 8: " + power);
+        System.out.println("Factorial of 5: " + factorial);
+        System.out.println("7th Fibonacci number: " + fibonacci);
         System.out.println(greeting);
         System.out.println(birthdayMessage);
         System.out.println("Is Alice an adult? " + isAdult);
