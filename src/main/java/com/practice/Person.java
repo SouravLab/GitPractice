@@ -22,11 +22,27 @@ public class Person {
     }
 
     public String greet() {
-        return "Hello — resolved!";
+        return String.format("Hello, my name is %s (%s), age %d. Adult: %b", name, initials(), age, isAdult());
     }
 
-    public String birthdayMessage() {
-        return String.format("Happy birthday, %s! You are now %d years old.", name, age);
+    public Person withBirthday() {
+        return new Person(this.name, this.age + 1);
+    }
+
+    public boolean isSenior() {
+        return age >= 65;
+    }
+
+    public String initials() {
+        if (name == null || name.isEmpty())
+            return "";
+        String[] parts = name.split("\\s+");
+        StringBuilder sb = new StringBuilder();
+        for (String p : parts) {
+            if (!p.isEmpty())
+                sb.append(Character.toUpperCase(p.charAt(0)));
+        }
+        return sb.toString();
     }
 
     @Override
