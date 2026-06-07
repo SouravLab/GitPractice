@@ -17,7 +17,7 @@ public class App {
 
         Person alice = new Person("Alice", 30);
         String greeting = alice.greet();
-        String birthdayMessage = alice.birthdayMessage();
+
         boolean isAdult = alice.isAdult();
         Address addr = new Address("London", "UK");
 
@@ -34,7 +34,7 @@ public class App {
         System.out.println("Factorial of 5: " + factorial);
         System.out.println("7th Fibonacci number: " + fibonacci);
         System.out.println(greeting);
-        System.out.println(birthdayMessage);
+
         System.out.println("Is Alice an adult? " + isAdult);
         System.out.println("Person: " + alice);
     }

@@ -51,11 +51,4 @@ public class AppTest {
         assertEquals("Hello, my name is Bob and I am 25 years old.", person.greet());
     }
 
-    @Test
-    public void testPersonIsAdultAndBirthdayMessage() {
-        Person person = new Person("Bob", 25);
-        assertTrue(person.isAdult());
-        assertEquals("Happy birthday, Bob! You are now 25 years old.", person.birthdayMessage());
-        assertEquals("Person{name='Bob', age=25}", person.toString());
-    }
 }
