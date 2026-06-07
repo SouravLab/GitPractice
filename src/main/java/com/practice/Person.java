@@ -22,7 +22,7 @@ public class Person {
     }
 
     public String greet() {
-        return "Hello from master!";
+        return "Hello — resolved!";
     }
 
     public String birthdayMessage() {
